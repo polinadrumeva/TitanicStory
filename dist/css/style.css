@@ -1,0 +1,87 @@
+html,
+body {
+  font-family: math;
+  font-size: larger;
+  margin: 0;
+  height: 100%;
+}
+
+p {
+  margin-block-start: 0;
+  text-indent: 1rem;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: rgb(129, 112, 112);
+  width: 40px;
+  margin: 1.5rem 0 1rem 0;
+}
+
+#wrapper {
+  display: flex;
+  height: 100%;
+}
+
+#root {
+  flex-grow: 1;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  background: seashell;
+  border-right: 1px solid rgb(139, 134, 134);
+}
+
+.sidebar > a {
+  margin: 0.5rem 0;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: rgb(165, 163, 161);
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 1rem;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.socials-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials-card {
+  display: flex;
+  align-items: center;
+
+  border: 1px solid rgb(105, 84, 84);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+
+  text-decoration: none;
+  color: unset;
+}
+
+.socials-card:hover {
+  background-color: rgb(233, 195, 195);
+}
+
+.socials-card > i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+a:hover {
+  background: rgb(233, 195, 195);
+  cursor: pointer;
+}
