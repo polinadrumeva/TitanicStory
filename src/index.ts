@@ -1,31 +1,8 @@
-import { homePage } from "./views/home";
-
-type RouterMap = {
-    [key : string] : string;
-};
-
-const router : RouterMap = {
-    '/': homePage,
-};
+import { router } from "./router";
+import { HtmlRenderer } from "./utilities/htmlRender";
 
 const rootDiv = document.getElementById("root");
-if(rootDiv) {
-    rootDiv.innerHTML = router[window.location.pathname];
-};
 
-const onNavigate = (pathname : string) => {
-    const {origin} = window.location;
-    window.history.pushState({}, pathname, `${origin}${pathname}`);
-    
-    if(rootDiv) {
-        rootDiv.innerHTML = router[pathname];
-    };
-}; 
+HtmlRenderer.render(rootDiv, router);
 
-const home : HTMLElement | null = document.getElementById("home");
-const about = document.getElementById("about");
-const contact = document.getElementById("contact");
 
-home?.addEventListener("click", () => {
-    onNavigate('/');
-});
