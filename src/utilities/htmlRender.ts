@@ -19,6 +19,7 @@ export class HtmlRenderer {
         const history : HTMLElement | null  = document.getElementById("history");
         const schems : HTMLElement | null  = document.getElementById("schematics");
         const invest : HTMLElement | null  = document.getElementById("investigation");
+        const legends : HTMLElement | null  = document.getElementById("legends");
 
         //Event listeners attachement
         home?.addEventListener("click", () => {
@@ -35,6 +36,9 @@ export class HtmlRenderer {
         });
         invest?.addEventListener("click", () => {
             HtmlRenderer.onNavigate(router, rootDiv, '/investigation');
+        });
+        legends?.addEventListener("click", () => {
+            HtmlRenderer.onNavigate(router, rootDiv, '/legends');
         });
     }
     

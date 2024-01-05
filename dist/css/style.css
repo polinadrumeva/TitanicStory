@@ -139,6 +139,14 @@ h3 {
   height: 400px;
 }
 
+.legendsPhoto {
+  display: block;
+  margin: auto;
+  box-shadow: 20px 8px 19px 15px #628aaf;
+  margin-top: 5rem;
+  height: 500px;
+}
+
 .history {
   display: inline;
 }
