@@ -1,2 +1,2 @@
 # TypeScriptProject
-My SPA typeScript project.
+### Simple SPA application with TypeScript.
