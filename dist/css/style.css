@@ -90,6 +90,10 @@ a:hover {
   cursor: pointer;
 }
 
+h3 {
+  text-align: center;
+}
+
 /* Home Page */
 
 .homePage {
@@ -116,4 +120,23 @@ a:hover {
     box-shadow: 20px 8px 19px 15px #628aaf;
     margin-top: 5rem;
     height: 550px;
+}
+
+/* History Page */
+.introPhoto {
+  display: block;
+  margin: auto;
+  box-shadow: 20px 8px 19px 15px #628aaf;
+  margin-top: 5rem;
+  height: 400px;
+}
+
+.history {
+  display: inline;
+}
+
+.artHistory {
+  display: block;
+  padding-left: 11rem;
+  padding-right: 11rem;
 }
