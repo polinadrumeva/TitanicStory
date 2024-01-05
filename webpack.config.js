@@ -7,8 +7,23 @@ module.exports = {
     rules: [
       {
         test: /\.ts$/,
-        use: "ts-loader",
-        include: [path.resolve(__dirname, "src")],
+        use: 'ts-loader',
+        exclude: /node_modules/,
+        
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192, // Convert images smaller than 8KB to data URL
+              fallback: 'file-loader',
+              outputPath: 'images/', // Optional: Specify the output directory
+              name: '[name].[ext]',
+            },
+          },
+        ],
       },
     ],
   },
@@ -17,7 +32,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
   },
   resolve: {
-    extensions: [".ts", ".js"],
+    extensions: [".ts", ".js", ".jpg"],
   },
   devServer: {
     static: path.resolve(__dirname, "dist"),
