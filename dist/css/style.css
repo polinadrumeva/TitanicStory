@@ -122,6 +122,14 @@ h3 {
     height: 550px;
 }
 
+.scheme {
+  display: block;
+    margin: auto;
+    box-shadow: 20px 8px 19px 15px #628aaf;
+    margin-top: 5rem;
+    height: 500px;
+}
+
 /* History Page */
 .introPhoto {
   display: block;
@@ -148,4 +156,11 @@ h3 {
   display: block;
   padding-left: 11rem;
   padding-right: 11rem;
+}
+
+.invest {
+  display: block;
+  padding-left: 11rem;
+  padding-right: 11rem;
+  margin-top: 2rem;
 }

@@ -18,7 +18,7 @@ export class HtmlRenderer {
         const intro : HTMLElement | null  = document.getElementById("intro");
         const history : HTMLElement | null  = document.getElementById("history");
         const schems : HTMLElement | null  = document.getElementById("schematics");
-        const contact = document.getElementById("contact");
+        const invest : HTMLElement | null  = document.getElementById("investigation");
 
         //Event listeners attachement
         home?.addEventListener("click", () => {
@@ -32,6 +32,9 @@ export class HtmlRenderer {
         });
         schems?.addEventListener("click", () => {
             HtmlRenderer.onNavigate(router, rootDiv, '/schematics');
+        });
+        invest?.addEventListener("click", () => {
+            HtmlRenderer.onNavigate(router, rootDiv, '/investigation');
         });
     }
     
