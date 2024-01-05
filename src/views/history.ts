@@ -3,13 +3,8 @@ import historyPhoto from '../images/historyphoto.jpg';
 
 export const historyPage = 
    `<div class="history">
+   <img class="historyPhoto" src=${historyPhoto} alt="titanic" />
    <article class="artHistory">
-   <h3>History</h3>
-   <img class="mainPage" src=${historyPhoto} alt="titanic" />
-    <p>The agony of the most luxurious passenger ship of its time, announced in advance as "unsinkable", lasts two hours and forty minutes.
-    About 1,500 passengers and crew perished in a few hours. The exact number of Bulgarians has not been established - according to data 
-    from Lloyd's of London, 38 died. It is assumed that about 15 Bulgarians survived, with most staying forever in America.
-    </p>
     <p>On the night of Titanic's fatal encounter with a Greenland iceberg, the 6,000-ton ship Californian with Captain Stanley Lord was traveling
      in the same direction (to Boston). On the evening of April 14, the "Californian" was surrounded by ice and was forced to stop until morning.
      At 11:00 p.m., Captain Lord orders a message to be broadcast on the radio warning ships sailing in the area of dangerous ice blocks. On board 
