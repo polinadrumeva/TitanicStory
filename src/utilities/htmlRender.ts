@@ -20,6 +20,7 @@ export class HtmlRenderer {
         const schems : HTMLElement | null  = document.getElementById("schematics");
         const invest : HTMLElement | null  = document.getElementById("investigation");
         const facts : HTMLElement | null  = document.getElementById("facts");
+        const discoveries : HTMLElement | null  = document.getElementById("discoveries");
         const legends : HTMLElement | null  = document.getElementById("legends");
 
         //Event listeners attachement
@@ -40,6 +41,9 @@ export class HtmlRenderer {
         });
         facts?.addEventListener("click", () => {
             HtmlRenderer.onNavigate(router, rootDiv, '/facts');
+        });
+        discoveries?.addEventListener("click", () => {
+            HtmlRenderer.onNavigate(router, rootDiv, '/discoveries');
         });
         legends?.addEventListener("click", () => {
             HtmlRenderer.onNavigate(router, rootDiv, '/legends');

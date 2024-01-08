@@ -7,6 +7,7 @@ import { introductionPage } from "./views/introduction";
 import { investigationPage } from "./views/investigations";
 import { legendsPage } from "./views/legends";
 import { factsPage } from "./views/facts";
+import { discoveriesPage } from "./views/discoveries";
 
 
 
@@ -17,7 +18,8 @@ export const router : RouterMap = {
     '/schematics': schematicsPage,
     '/investigation': investigationPage,
     '/legends': legendsPage,
-    '/facts': factsPage
+    '/facts': factsPage,
+    '/discoveries': discoveriesPage
 
 };
 
