@@ -19,5 +19,6 @@ jobs:
         node-version: 18.x
         cache: 'npm'
     - name: Build Titanic's Story  
-      run: node server.js
+      run: npm install 
+           node server.js
     
