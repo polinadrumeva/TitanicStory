@@ -1,15 +1,13 @@
 const path = require("path");
 
 module.exports = {
-  // devtool: "eval-source-map",
-  entry: path.resolve(__dirname, "src/index.ts"), // Your entry TypeScript file
+  entry: path.resolve(__dirname, "src/index.ts"),
   module: {
     rules: [
       {
         test: /\.ts$/,
         use: 'ts-loader',
         exclude: /node_modules/,
-        
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
@@ -17,9 +15,9 @@ module.exports = {
           {
             loader: 'url-loader',
             options: {
-              limit: 8192, // Convert images smaller than 8KB to data URL
+              limit: 8192,
               fallback: 'file-loader',
-              outputPath: 'images/', // Optional: Specify the output directory
+              outputPath: 'images/',
               name: '[name].[ext]',
             },
           },
@@ -32,7 +30,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
   },
   resolve: {
-    extensions: [".ts", ".js", ".jpg"],
+    extensions: [".ts", ".js"],
   },
   devServer: {
     static: path.resolve(__dirname, "dist"),

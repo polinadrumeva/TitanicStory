@@ -48,6 +48,10 @@ export class HtmlRenderer {
         legends?.addEventListener("click", () => {
             HtmlRenderer.onNavigate(router, rootDiv, '/legends');
         });
+
+        window.addEventListener("popstate", () => {
+            HtmlRenderer.render(rootDiv, router);
+          });
     }
     
      

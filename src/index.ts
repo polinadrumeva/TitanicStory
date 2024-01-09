@@ -3,6 +3,6 @@ import { HtmlRenderer } from "./utilities/htmlRender";
 
 const rootDiv = document.getElementById("root");
 
-HtmlRenderer.render(rootDiv, router);
-
-
+window.addEventListener('load', () => {
+  HtmlRenderer.render(rootDiv, router);
+});
